@@ -1,5 +1,5 @@
-.Task:hover {
-    background-color: rgba(0,0,0,0.12);
+.Task:hover:not(.Task.delete) {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .Task label {
@@ -8,6 +8,13 @@
 }
 
 .Task i:hover {
-    color: red;
+    color: #ff006a;
     cursor: pointer;
+    text-shadow: 0 0 6px #ff006a;
+}
+
+
+.Task input:checked+label {
+    text-decoration: line-through;
+    color: lightgray;
 }

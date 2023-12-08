@@ -14,13 +14,14 @@ export function Form() {
 
     function handleSubmit(e: React.FormEvent){
         e.preventDefault();
+        if (!value.trim()) return;
         saveTask(new TaskDTO(null,value,null,user?.email!))
             .then(task => {
                 taskDispatcher({type: 'add' , task});
-                setValue('');
+                setValue("");
                 txtRef.current!.focus();
             }).catch(err => {
-                alert(err);
+                alert("Failed to save the task try again!");
         })
     }
 
@@ -28,16 +29,16 @@ export function Form() {
         <>
             <form
                 onSubmit={handleSubmit}
-                className="d-flex gap-2 p-2 border-bottom" action="">
+                className="Form bg-body d-flex gap-1 p-2 border-bottom">
                 <input
+                    className="form-control shadow-sm rounded-0"
                     ref={txtRef}
                     value={value}
                     onChange={e => setValue(e.target.value)}
-                    className="form-control"
                     type="text"
                     placeholder="Eg. Finish react to-so- app ASAP!"
                 />
-                <button className="btn btn-primary">ADD</button>
+                <button className="btn btn-primary shadow-sm rounded-0">ADD</button>
             </form>
         </>
     );

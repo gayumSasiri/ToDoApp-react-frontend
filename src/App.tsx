@@ -7,6 +7,8 @@ import {SignIn} from "./component/signin/SignIn.tsx";
 import {Loader} from "./component/loader/Loader.tsx";
 import {Header} from "./component/header/Header.tsx";
 import {Form} from "./component/form/Form.tsx";
+import {TaskProvider} from "./context/TaskContext.tsx";
+import {TaskList} from "./component/task-list/TaskList.tsx";
 
 function App() {
 
@@ -35,7 +37,10 @@ function App() {
             user ? // else part
             (<>
                 <Header />
-                <Form />
+                <TaskProvider>
+                    <Form />
+                    <TaskList />
+                </TaskProvider>
             </>)
             :
             <SignIn/>
