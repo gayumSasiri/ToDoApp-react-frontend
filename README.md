@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# To Do App (front-end)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+Welcome to an advanced Todo Web App meticulously crafted using React for the front end and Java Spring for the backend. This front-end application is dedicated to delivering an exceptional user experience through aesthetically pleasing interfaces and a responsive design.
 
-Currently, two official plugins are available:
+## Tech Stack Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Front End** - React + vite
+- **Authentication** - Firebase
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Light mode and Dark mode** - ToDoApp offers both light mode and dark mode options, allowing users to choose their preferred visual style for a personalized and comfortable task management experience.
+- **Responsive Design** - ToDoApp is developed with precision, featuring a responsive design that ensures a seamless and enjoyable experience across various devices and screen sizes.
+- **Firebase Authentication Integration** - ToDoApp leverages Firebase Authentication to enhance security and streamline user logins. Hosted on Firebase, this integration provides a robust and scalable solution for managing tasks with confidence.
 
-- Configure the top-level `parserOptions` property like this:
+## Sample Images
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Version
+1.0.0
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### License
+Copyright &copy; 2023 Gayum Sasiri. All Rights Reserved.<br>
+This project is licensed under [MIT License](LICENSE.txt).
