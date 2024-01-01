@@ -33,5 +33,5 @@ export async function updateTask(task: TaskDTO){
 
 export async function deleteTask(taskId: number){
     const response = await fetch(`${API_BASE_URL}/${taskId}`, {method: 'DELETE'});
-    if (response.ok) throw new Error("Failed to delete the task");
+    if (!response.ok) throw new Error("Failed to delete the task");
 }

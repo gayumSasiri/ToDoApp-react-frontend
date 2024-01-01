@@ -15,7 +15,7 @@ export function Header() {
                     justify-content-between align-items-center">
                 <h3 className="m-0">
                     <i className="bi bi-clipboard-check-fill pe-2"></i>
-                    To-do App</h3>
+                    TASK REMINDER</h3>
                 <div>
                     <Theme />
                     <button onClick={handleSignOut}
